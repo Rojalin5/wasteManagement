@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waste Management Guidelines</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">IndiaWasteManagement</div>
+        <ul>
+            <li><a href="index.html">Guidelines</a></li>
+            <li><a href="askanything.html">FAQs & Ask</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="home" class="section">
+            <h2>Welcome to India's Waste Management Guidelines</h2>
+            <p style="margin: 10px; padding: 3px;">Proper waste management is essential for a sustainable future. Learn how different states in India are implementing effective waste disposal and recycling policies.</p>
+            <p style="margin: 10px; padding: 3px;">Explore best practices, legal frameworks, and innovative solutions adopted across the country to tackle waste-related challenges.</p>
+        </section>
+
+        <section id="importance" class="section">
+            <h2>Why Waste Management Matters?</h2>
+            <p style="margin: 10px; padding: 3px;">Waste management helps in reducing pollution, conserving resources, and maintaining public health. With India's growing population, sustainable waste disposal is critical.</p>
+            <ul>
+                <li>Protects the environment by reducing landfill waste.</li>
+                <li>Encourages recycling and reusing materials.</li>
+                <li>Reduces health risks associated with improper waste disposal.</li>
+                <li>Promotes cleaner cities and a sustainable future.</li>
+            </ul>
+        </section>
+
+  
+        <div class="search-bar">
+            <h2>State-wise Waste Management Guidelines</h2>
+            <input type="text" id="search-bar" placeholder="Search for a state..." oninput="filterStates()">
+            <button type="search">Search</button>
+        </div>
+
+        <div class="grid" id="states-guidelines">
+            <!-- Guidelines will be added here dynamically -->
+             <div id="maharastra"><a href="https://www.mpcb.gov.in/waste-management/municipal-solid-waste"></a></div>
+        </div>
+
+        <div class="show-more" id="show-more-container">
+            <!-- The Show More button will appear here -->
+        </div>
+    
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <h2>Useful Resources</h2>
+        <p style="margin-left:12px ;">Find more information on waste management regulations and best practices:</p>
+        <ul>
+            <li><a href="https://moef.gov.in" target="_blank">Ministry of Environment, Forest and Climate Change</a></li>
+            <li><a href="https://mohua.gov.in" target="_blank">Ministry of Housing and Urban Affairs</a></li>
+            <li><a href="https://teriin.org" target="_blank">The Energy and Resources Institute (TERI)</a></li>
+            <li><a href="https://swachhbharaturban.gov.in" target="_blank">Swachh Bharat Mission</a></li>
+            <li><a href="https://india.gov.in/spotlight/plastic-waste-management-india" target="_blank">Plastic Waste Management in India</a></li>
+            <li><a href="https://www.greenpeace.org/india/en/" target="_blank">Greenpeace India</a></li>
+        </ul>
+    </section>
+    <section id="best-practices" class="section">
+        <h2>Best Practices in Waste Management</h2>
+        <ul>
+            <li>Waste Segregation at Source – Separate wet and dry waste.</li>
+            <li>Reduce, Reuse, Recycle (3Rs) to minimize waste.</li>
+            <li>Composting organic waste to reduce landfill burden.</li>
+            <li>Implementing community waste collection programs.</li>
+            <li>Encouraging Extended Producer Responsibility (EPR) in businesses.</li>
+        </ul>
+    </section>
+
+    <section id="legal-frameworks" class="section">
+        <h2>Legal Frameworks for Waste Management in India</h2>
+        <ul>
+            <li><strong>Solid Waste Management Rules (2016):</strong> Mandates waste segregation and composting.</li>
+            <li><strong>Plastic Waste Management Rules (2022):</strong> Bans single-use plastics and enforces recycling.</li>
+            <li><strong>E-Waste Management Rules (2022):</strong> Ensures responsible disposal of electronic waste.</li>
+            <li><strong>Bio-Medical Waste Management Rules (2016):</strong> Regulates medical waste disposal.</li>
+            <li><strong>Hazardous Waste Management Rules (2016):</strong> Controls industrial waste handling.</li>
+        </ul>
+    </section>
+
+    <section id="innovations" class="section">
+        <h2>Innovative Waste Management Solutions</h2>
+        <ul>
+            <li><strong>Smart Waste Bins:</strong> Sensor-based bins alert waste collection teams when full.</li>
+            <li><strong>Waste-to-Energy Plants:</strong> Convert non-recyclable waste into electricity.</li>
+            <li><strong>AI-Powered Waste Sorting:</strong> Uses machine learning to enhance recycling efficiency.</li>
+            <li><strong>Plastic Roads:</strong> Roads built using recycled plastic waste for durability.</li>
+            <li><strong>Reverse Vending Machines:</strong> Machines that accept plastic bottles and give rewards.</li>
+        </ul>
+    </section>
+
+    <div class="grid" id="states-guidelines">
+        <!-- Guidelines will be added here dynamically -->
+    </div>
+
+    <div class="show-more" id="show-more-container">
+        <!-- The Show More button will appear here -->
+    </div>
+</div>
+</div>
+
+    <div class="contact-us" id="contact-us">
+        <h2 style="text-align: center;">Contact Us</h2>
+        <p style="text-align: center;">If you have any questions or need further assistance, feel free to contact us.</p>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

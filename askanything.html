@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs and Ask Anything</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            overflow-x: hidden; /* Prevents horizontal scrollbar */
+            overflow-y: auto; /* Allows vertical scrolling only when needed */
+            font-family: Arial, sans-serif;
+        }
+
+        .grid {
+            max-height: 400px;
+            overflow-y: auto; /* Ensures internal scrolling for content */
+        }
+
+        .faq {
+            margin-bottom: 40px;
+        }
+
+        .faq h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .faq-item {
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #007bff;
+        }
+
+        .faq-item h3 {
+            margin: 0;
+            color: #007bff;
+        }
+
+        .faq-item p {
+            margin: 10px;
+            padding: 3px;
+            color: #333;
+        }
+
+        .ask-section {
+            text-align: center;
+        }
+
+        .ask-section input {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .ask-section button {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .ask-section button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Waste Management</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="askanything.html">FAQs & Ask</a></li>
+            <li><a href="index.html">Resources</a></li>
+            <li><a href="index.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="faq">
+            <h2>Common Questions</h2>
+            <div class="grid" id="faq-section">
+                <!-- FAQs will be added here dynamically -->
+            </div>
+        </div>
+
+        <div class="ask-section" id="ask-section">
+            <h2>Ask Anything</h2>
+            <input type="text" id="question-input" placeholder="Type your question here...">
+            <button onclick="handleAskAnything()">Submit</button>
+            <p class="response" id="response"></p>
+        </div>
+    </div>
+
+    <script src="askanything.js"></script>
+</body>
+</html>
